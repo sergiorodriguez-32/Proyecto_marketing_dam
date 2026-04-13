@@ -5,6 +5,7 @@
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
+    padding-top: 80px;
 
 }
 
@@ -73,6 +74,9 @@
 
 
 .cph-header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -80,6 +84,7 @@
     background-color: var(--cph-color-primary-light);
     gap: 80px;
     padding: 10px;
+    z-index: 1000;
 }
 
 .cph-header__left {
@@ -174,7 +179,7 @@
 
 .cph-hero {
     background-image:
-        linear-gradient(rgba(11, 31, 77, 0.45), rgba(11, 31, 77, 0.45)),
+        linear-gradient(rgba(11, 31, 77, 0.60), rgba(11, 31, 77, 0.60)),
         url('/Paginas/Imagenes/imagen_hero.jpg');
     background-position: center;
     background-size: cover;
