@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .cph-body {
     margin: 0px;
     width: 100%;
@@ -149,9 +153,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cph-color-primary-dark);
     border-radius: 10px;
-    border: 1px solid var(--cph-color-bg);
     cursor: pointer;
 }
 
@@ -164,6 +166,7 @@
     border-radius: 10px;
     border: 1px solid var(--cph-color-bg);
     cursor: pointer;
+    transition: transform 0.8s ease;
 }
 
 .button__link {
@@ -175,6 +178,8 @@
 
 .box__button:hover {
     background-color: var(--cph-color-logo-yellow-dark);
+    transition: background-color 0.45s ease, transform 0.45s ease;
+    transform: translateY(-5px);
 }
 
 .cph-hero {
@@ -222,4 +227,53 @@
     font-family: var(--cph-font-title);
     color: var(--cph-color-text);
     font-size: 25px;
+}
+
+.cph-empresa {
+    background-color: var(--cph-color-primary-light);
+    padding: 30px;
+}
+
+.cph-empresa__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 20px;
+}
+
+.empresa__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: var(--cph-color-primary-dark);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+
+}
+
+.empresa__img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.empresa__img--size {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.empresa__card:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
