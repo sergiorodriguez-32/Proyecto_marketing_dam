@@ -1,0 +1,53 @@
+:root{
+    --pt-color-principal: rgb(10, 10, 10);
+    --pt-color-secundario: rgb(242, 242, 242);
+    --pt-color-terciario: rgb(172, 135, 83);
+    --pt-fuente-principal: vi
+}
+
+.pt-body{
+    margin: 0 auto;
+    background-color: var(--pt-color-principal);
+    color: var(--pt-color-secundario);
+}
+
+.pt-header__top{
+    background-color: var(--pt-color-principal);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pt-header__pt-navegator{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 20px;
+}
+
+.pt-header__imageLogo{
+    width: 150px;
+}
+
+.pt-header__pt-RRSS{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pt-header__rrssLogo{
+    width: 25px;
+    height: 25px;
+}
+
+.pt-header__pt-hero{
+    width: 100%;
+    height: 600px;
+}
