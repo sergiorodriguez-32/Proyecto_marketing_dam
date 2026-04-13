@@ -1,4 +1,176 @@
 .cph-body {
     margin: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
 
+
+:root {
+    /* Brand */
+    --cph-color-primary: #0B1F4D;
+    /* Azul marino principal */
+    --cph-color-primary-light: #1E3A78;
+    /* Azul secundario */
+    --cph-color-primary-dark: #061330;
+    /* Azul más profundo */
+
+    --cph-color-accent: #C89B3C;
+    /* Dorado principal */
+    --cph-color-accent-light: #E0B95B;
+    /* Dorado claro */
+    --cph-color-accent-dark: #9F7727;
+    /* Dorado oscuro */
+
+    --cph-color-logo-yellow: #D4A63A;
+    /* Amarillo/dorado para logo y hover */
+    --cph-color-logo-yellow-light: #E6BF63;
+    --cph-color-logo-yellow-dark: #A97D22;
+
+    /* Neutrales */
+    --cph-color-bg: #F8F7F3;
+    /* Fondo general suave */
+    --cph-color-surface: #FFFFFF;
+    /* Tarjetas, cajas */
+    --cph-color-surface-alt: #EEF1F7;
+    /* Fondos alternativos */
+
+    --cph-color-text: #FFFFFF;
+    /* Texto principal */
+    --cph-color-text-soft: #5F6470;
+    /* Texto secundario */
+    --cph-color-text-inverse: #FFFFFF;
+    /* Texto sobre fondos oscuros */
+
+    --cph-color-border: #D9DEE8;
+    /* Bordes suaves */
+    --cph-color-divider: #E8E3D6;
+    /* Separadores elegantes */
+
+    /* Estados */
+    --cph-color-success: #2E7D32;
+    --cph-color-warning: #B7791F;
+    --cph-color-danger: #C62828;
+    --cph-color-info: #1E5AA8;
+
+    /* Hover de textos y enlaces */
+    --cph-color-link-hover: var(--cph-color-logo-yellow);
+    --cph-color-title-hover: var(--cph-color-logo-yellow);
+
+    /* Botones */
+    --cph-btn-primary-bg: var(--cph-color-primary);
+    --cph-btn-primary-text: var(--cph-color-text-inverse);
+    --cph-btn-primary-hover: var(--cph-color-logo-yellow);
+
+    --cph-btn-accent-bg: var(--cph-color-accent);
+    --cph-btn-accent-text: #FFFFFF;
+    --cph-btn-accent-hover: var(--cph-color-logo-yellow-dark);
+
+    /* Tipografía */
+    --cph-font-title: 'Cinzel', serif;
+    --cph-font-body: 'Roboto', sans-serif;
+}
+
+
+.cph-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cph-color-primary-light);
+    gap: 80px;
+    padding: 10px;
+}
+
+.cph-header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cph-left__img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cph-left__title {
+    font-family: var(--cph-font-title);
+    color: var(--cph-color-text);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cph-header__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 80px;
+}
+
+.list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.list__link {
+    font-family: var(--cph-font-title);
+    color: var(--cph-color-text);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list__link:hover {
+    color: var(--cph-color-logo-yellow-light);
+}
+
+.cph-header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.right__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cph-color-primary-dark);
+    border-radius: 10px;
+    border: 1px solid var(--cph-color-bg);
+    cursor: pointer;
+}
+
+.box__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cph-color-primary-dark);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--cph-color-bg);
+    cursor: pointer;
+}
+
+.button__link {
+    text-decoration: none;
+    font-family: var(--cph-font-title);
+    color: var(--cph-color-text);
+    font-size: 17px;
+
+}
+
+.box__button:hover {
+    background-color: var(--cph-color-logo-yellow-dark);
 }
