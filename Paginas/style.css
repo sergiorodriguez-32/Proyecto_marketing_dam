@@ -1,14 +1,23 @@
 :root{
     --pt-color-principal: rgb(10, 10, 10);
     --pt-color-secundario: rgb(242, 242, 242);
-    --pt-color-terciario: rgb(172, 135, 83);
-    --pt-fuente-principal: vi
+    --pt-color-terciario: rgb(228, 195, 103);
+
+    --pt-fuente-principal: 'Grenze Gotisch', serif;
+    --pt-fuente-secundaria: "Pirata One", system-ui;
 }
 
 .pt-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     background-color: var(--pt-color-principal);
     color: var(--pt-color-secundario);
+}
+
+.pt-header{
+    width: 100%;
 }
 
 .pt-header__top{
@@ -28,7 +37,7 @@
     flex-direction: row;
     width: 40%;
     justify-content: space-between;
-    font-family: 'Grenze Gotisch', serif;
+    font-family: var(--pt-fuente-principal);
     font-size: 20px;
 }
 
@@ -50,4 +59,92 @@
 .pt-header__pt-hero{
     width: 100%;
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Imagenes/pt-fondo.jpeg);
+    background-size: cover;
+}
+
+.pt-header__box{
+    background-color: var(--pt-color-principal);
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pt-header__title{
+    font-size: 49px;
+    font-family: var(--pt-fuente-principal);
+}
+
+.pt-header__text{
+    font-size: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.pt-button{
+    width: fit-content;
+    padding: 25px;
+    border-top: 2px solid var(--pt-color-terciario);
+    border-bottom: 2px solid var(--pt-color-terciario);
+    font-size: larger;
+    font-family: var(--pt-fuente-secundaria);
+}
+
+.pt-separator{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 490px;
+}
+
+.pt-separator__image{
+    width: 225px;
+    height: 400px;
+}
+
+.pt-separator__line{
+    border: 3px solid var(--pt-color-terciario);
+    background-color: var(--pt-color-terciario);
+    width: 100%;
+}
+
+
+.pt-food{
+    margin-top: 50px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pt-foot__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pt-food__textBox{
+    width: 70%;
+}
+
+.pt-food__title{
+    font-size: 49px;
+    font-family: var(--pt-fuente-principal);
+}
+
+.pt-food__text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.pt-food__image{
+    width: 50%;
 }
