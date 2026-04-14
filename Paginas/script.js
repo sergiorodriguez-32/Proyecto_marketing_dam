@@ -1,0 +1,126 @@
+
+/*CapitalHome*/
+const carousel = document.getElementById("carousel");
+const track = document.getElementById("carouselTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let originalCards = Array.from(document.querySelectorAll(".property-card"));
+let currentIndex = 0;
+let autoSlide;
+let isAnimating = false;
+
+function getVisibleCards() {
+    if (window.innerWidth <= 700) return 1;
+    if (window.innerWidth <= 1100) return 2;
+    return 3;
+}
+
+function getGap() {
+    return 20;
+}
+
+function getCardWidth() {
+    const card = track.querySelector(".property-card");
+    return card.offsetWidth + getGap();
+}
+
+function createInfiniteCarousel() {
+    track.innerHTML = "";
+
+    const visibleCards = getVisibleCards();
+
+    const clonesBefore = originalCards
+        .slice(-visibleCards)
+        .map((card) => card.cloneNode(true));
+
+    const clonesAfter = originalCards
+        .slice(0, visibleCards)
+        .map((card) => card.cloneNode(true));
+
+    clonesBefore.forEach((card) => track.appendChild(card));
+    originalCards.forEach((card) => track.appendChild(card.cloneNode(true)));
+    clonesAfter.forEach((card) => track.appendChild(card));
+
+    currentIndex = visibleCards;
+    updateCarousel(false);
+}
+
+function updateCarousel(animate = true) {
+    const offset = currentIndex * getCardWidth();
+    track.style.transition = animate ? "transform 1.2s ease-in-out" : "none";
+    track.style.transform = `translateX(-${offset}px)`;
+}
+
+function nextSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentIndex++;
+    updateCarousel(true);
+}
+
+function prevSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentIndex--;
+    updateCarousel(true);
+}
+
+track.addEventListener("transitionend", () => {
+    const visibleCards = getVisibleCards();
+    const totalOriginal = originalCards.length;
+
+    if (currentIndex >= totalOriginal + visibleCards) {
+        currentIndex = visibleCards;
+        updateCarousel(false);
+    }
+
+    if (currentIndex < visibleCards) {
+        currentIndex = totalOriginal + visibleCards - 1;
+        updateCarousel(false);
+    }
+
+    isAnimating = false;
+});
+
+function startAutoSlide() {
+    stopAutoSlide();
+    autoSlide = setInterval(() => {
+        nextSlide();
+    }, 4500);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlide);
+}
+
+nextBtn.addEventListener("click", () => {
+    nextSlide();
+    startAutoSlide();
+});
+
+prevBtn.addEventListener("click", () => {
+    prevSlide();
+    startAutoSlide();
+});
+
+carousel.addEventListener("mouseenter", stopAutoSlide);
+carousel.addEventListener("mouseleave", startAutoSlide);
+
+window.addEventListener("resize", () => {
+    createInfiniteCarousel();
+});
+
+
+track.addEventListener("click", (e) => {
+    const button = e.target.closest(".favorite-btn");
+    if (!button) return;
+
+    button.classList.toggle("active");
+    button.textContent = button.classList.contains("active") ? "♥" : "♡";
+});
+
+createInfiniteCarousel();
+startAutoSlide();
+
+/*CapitalHome*/
