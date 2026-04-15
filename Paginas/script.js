@@ -1,11 +1,10 @@
-
-/*CapitalHome*/
+/* CapitalHome */
 const carousel = document.getElementById("carousel");
 const track = document.getElementById("carouselTrack");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-let originalCards = Array.from(document.querySelectorAll(".property-card"));
+let originalCards = Array.from(document.querySelectorAll(".cph-property-card"));
 let currentIndex = 0;
 let autoSlide;
 let isAnimating = false;
@@ -21,7 +20,7 @@ function getGap() {
 }
 
 function getCardWidth() {
-    const card = track.querySelector(".property-card");
+    const card = track.querySelector(".cph-property-card");
     return card.offsetWidth + getGap();
 }
 
@@ -111,16 +110,14 @@ window.addEventListener("resize", () => {
     createInfiniteCarousel();
 });
 
-
 track.addEventListener("click", (e) => {
-    const button = e.target.closest(".favorite-btn");
+    const button = e.target.closest(".cph-property-card__favorite-btn");
     if (!button) return;
 
-    button.classList.toggle("active");
-    button.textContent = button.classList.contains("active") ? "♥" : "♡";
+    button.classList.toggle("cph-property-card__favorite-btn--active");
+    button.textContent = button.classList.contains("cph-property-card__favorite-btn--active") ? "♥" : "♡";
 });
 
 createInfiniteCarousel();
 startAutoSlide();
-
-/*CapitalHome*/
+/* CapitalHome */
