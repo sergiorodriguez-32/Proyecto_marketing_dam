@@ -495,8 +495,6 @@ html {
 }
 
 .cph-services {
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
 }
 
@@ -508,13 +506,34 @@ html {
 }
 
 .cph-services__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "a b c";
+    width: 100%;
+    grid-gap: 10px;
+
 }
 
 .cph-box__item {
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cph-box__item--2 {
+    grid-area: b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cph-box__item--3 {
+    grid-area: c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -562,7 +581,7 @@ html {
     background-repeat: no-repeat;
     overflow: hidden;
     box-sizing: border-box;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .cph-contact__overlay {
@@ -752,4 +771,210 @@ html {
 .cph-card__span {
     color: var(--cph-color-logo-yellow-light);
     font-size: 50px;
+}
+
+.cph-footer {
+    background-color: var(--cph-color-primary);
+    color: var(--cph-color-text);
+    padding: 70px 40px 35px;
+    margin-top: 100px;
+}
+
+.cph-footer__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+.cph-footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.cph-footer__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cph-footer__real-logo {
+    max-width: 140px;
+    height: auto;
+    object-fit: contain;
+}
+
+.cph-footer__logo-placeholder {
+    width: 110px;
+    height: 70px;
+    border: 2px dashed var(--cph-color-accent-light);
+    color: var(--cph-color-accent-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+.cph-footer__brand-title,
+.cph-footer__mortgage-title {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.cph-footer__brand-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.cph-footer__link,
+.cph-footer__icon-link,
+.cph-footer__mortgage-link,
+.cph-footer__list a,
+.cph-footer__section-link,
+.cph-footer__legal a {
+    color: var(--cph-color-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cph-footer__link:hover,
+.cph-footer__icon-link:hover,
+.cph-footer__mortgage-link:hover,
+.cph-footer__list a:hover,
+.cph-footer__section-link:hover,
+.cph-footer__legal a:hover {
+    color: var(--cph-color-logo-yellow-light);
+}
+
+.cph-footer__link {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cph-footer__icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+
+.cph-footer__center {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.cph-footer__heading-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cph-footer__heading {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cph-footer__heading-line {
+    width: 270px;
+    height: 2px;
+    background-color: var(--cph-color-accent-light);
+    display: block;
+}
+
+.cph-footer__offices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cph-footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cph-footer__list li {
+    margin-bottom: 14px;
+}
+
+.cph-footer__list a {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 26px;
+    display: inline-block;
+}
+
+.cph-footer__list a::before {
+    content: "»";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--cph-color-text);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.cph-footer__bottom-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cph-footer__section-link {
+    font-size: 1.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+.cph-footer__mortgage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+.cph-footer__mortgage-link {
+    font-size: 1.2rem;
+    color: var(--cph-color-text);
+    max-width: 220px;
+    line-height: 1.5;
+}
+
+
+.cph-footer__legal {
+    max-width: 1400px;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cph-footer__legal a,
+.cph-footer__legal span {
+    font-size: 1.2rem;
+    color: var(--cph-color-text);
 }
