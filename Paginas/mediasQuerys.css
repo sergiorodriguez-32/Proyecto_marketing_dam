@@ -1,0 +1,46 @@
+@media (min-width: 1024px) {
+
+    .cph-empresa {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cph-empresa__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 70%;
+    }
+
+    .cph-property-card {
+        flex: 0 0 46%;
+        min-width: 46%;
+        max-width: 46%;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .cph-buy__bot {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+
+    .cph-buy__card {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--cph-color-primary-dark);
+        padding: 20px;
+        border-radius: 10px;
+        max-height: 320px;
+
+    }
+
+}

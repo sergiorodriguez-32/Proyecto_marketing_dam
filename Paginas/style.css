@@ -1,3 +1,7 @@
+/*Pagina Capital-Home*/
+
+/* #region Cabecera */
+
 html {
     scroll-behavior: smooth;
 }
@@ -978,3 +982,5 @@ html {
     font-size: 1.2rem;
     color: var(--cph-color-text);
 }
+
+/* #endregion */
