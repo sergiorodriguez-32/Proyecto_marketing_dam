@@ -1703,6 +1703,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
     text-align: center;
     font-size: 60px;
     font-family: var(--pt-fuente-principal);
+    padding-bottom: 45px;
 }
 
 .pt-header__text{
@@ -1717,6 +1718,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .pt-button{
     z-index: 20;
     padding: 25px;
+    margin-top: 10px;
     border-top: 2px solid var(--pt-color-terciario);
     border-bottom: 2px solid var(--pt-color-terciario);
     font-size: larger;
@@ -1770,6 +1772,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 
 .pt-food__textBox{
     width: 70%;
+    padding-bottom: 15px;
 }
 
 .pt-food__title{
@@ -1781,6 +1784,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .pt-food__text{
     font-size: 22px;
     text-align: center;
+
 }
 
 .pt-food__image{
@@ -1841,10 +1845,12 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .pt-events__title{
     font-family: var(--pt-fuente-principal);
     font-size: 40px;
+    padding-bottom: 15px;
 }
 
 .pt-events__text{
     font-size: 20px;
+    padding-bottom: 15px;
 }
 
 .pt-events__image{
