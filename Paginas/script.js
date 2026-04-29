@@ -1,4 +1,5 @@
 /* CapitalHome */
+
 const carousel = document.getElementById("carousel");
 const track = document.getElementById("carouselTrack");
 const prevBtn = document.getElementById("prevBtn");
@@ -120,4 +121,29 @@ track.addEventListener("click", (e) => {
 
 createInfiniteCarousel();
 startAutoSlide();
+
 /* CapitalHome */
+
+/* Index */
+
+
+function indToggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute("data-theme");
+
+    if (currentTheme === "night") {
+        html.setAttribute("data-theme", "day");
+        localStorage.setItem("ind-theme", "day");
+    } else {
+        html.setAttribute("data-theme", "night");
+        localStorage.setItem("ind-theme", "night");
+    }
+}
+
+const savedTheme = localStorage.getItem("ind-theme");
+
+if (savedTheme === "night" || savedTheme === "day") {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+}
+
+/* Index */
