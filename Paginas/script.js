@@ -1,3 +1,152 @@
+/* CapitalHome */
+
+const carousel = document.getElementById("carousel");
+const track = document.getElementById("carouselTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let originalCards = Array.from(document.querySelectorAll(".cph-property-card"));
+let currentIndex = 0;
+let autoSlide;
+let isAnimating = false;
+
+function getVisibleCards() {
+    if (window.innerWidth <= 700) return 1;
+    if (window.innerWidth <= 1100) return 2;
+    return 3;
+}
+
+function getGap() {
+    return 20;
+}
+
+function getCardWidth() {
+    const card = track.querySelector(".cph-property-card");
+    return card.offsetWidth + getGap();
+}
+
+function createInfiniteCarousel() {
+    track.innerHTML = "";
+
+    const visibleCards = getVisibleCards();
+
+    const clonesBefore = originalCards
+        .slice(-visibleCards)
+        .map((card) => card.cloneNode(true));
+
+    const clonesAfter = originalCards
+        .slice(0, visibleCards)
+        .map((card) => card.cloneNode(true));
+
+    clonesBefore.forEach((card) => track.appendChild(card));
+    originalCards.forEach((card) => track.appendChild(card.cloneNode(true)));
+    clonesAfter.forEach((card) => track.appendChild(card));
+
+    currentIndex = visibleCards;
+    updateCarousel(false);
+}
+
+function updateCarousel(animate = true) {
+    const offset = currentIndex * getCardWidth();
+    track.style.transition = animate ? "transform 1.2s ease-in-out" : "none";
+    track.style.transform = `translateX(-${offset}px)`;
+}
+
+function nextSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentIndex++;
+    updateCarousel(true);
+}
+
+function prevSlide() {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentIndex--;
+    updateCarousel(true);
+}
+
+track.addEventListener("transitionend", () => {
+    const visibleCards = getVisibleCards();
+    const totalOriginal = originalCards.length;
+
+    if (currentIndex >= totalOriginal + visibleCards) {
+        currentIndex = visibleCards;
+        updateCarousel(false);
+    }
+
+    if (currentIndex < visibleCards) {
+        currentIndex = totalOriginal + visibleCards - 1;
+        updateCarousel(false);
+    }
+
+    isAnimating = false;
+});
+
+function startAutoSlide() {
+    stopAutoSlide();
+    autoSlide = setInterval(() => {
+        nextSlide();
+    }, 4500);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlide);
+}
+
+nextBtn.addEventListener("click", () => {
+    nextSlide();
+    startAutoSlide();
+});
+
+prevBtn.addEventListener("click", () => {
+    prevSlide();
+    startAutoSlide();
+});
+
+carousel.addEventListener("mouseenter", stopAutoSlide);
+carousel.addEventListener("mouseleave", startAutoSlide);
+
+window.addEventListener("resize", () => {
+    createInfiniteCarousel();
+});
+
+track.addEventListener("click", (e) => {
+    const button = e.target.closest(".cph-property-card__favorite-btn");
+    if (!button) return;
+
+    button.classList.toggle("cph-property-card__favorite-btn--active");
+    button.textContent = button.classList.contains("cph-property-card__favorite-btn--active") ? "♥" : "♡";
+});
+
+createInfiniteCarousel();
+startAutoSlide();
+
+/* CapitalHome */
+
+/* Index */
+
+
+function indToggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute("data-theme");
+
+    if (currentTheme === "night") {
+        html.setAttribute("data-theme", "day");
+        localStorage.setItem("ind-theme", "day");
+    } else {
+        html.setAttribute("data-theme", "night");
+        localStorage.setItem("ind-theme", "night");
+    }
+}
+
+const savedTheme = localStorage.getItem("ind-theme");
+
+if (savedTheme === "night" || savedTheme === "day") {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+}
+
+/* Index */
 const header = document.querySelector(".pt-header__topBox");
 
 let pt_contador=0;
