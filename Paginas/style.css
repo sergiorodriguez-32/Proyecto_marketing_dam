@@ -2128,7 +2128,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 /* #region IndexGastronomy */
 .ind-gastronomy{
     width: 100%;
-    height: 895px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -2166,7 +2166,8 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .ind-gastronomy__imagebox{
     width: 100%;
     height: 100%;
-    padding-top: 10%;
+    padding-top: 120px;
+    overflow: hidden;
 }
 
 .ind-gastronomy__title{
@@ -2205,6 +2206,10 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 }
 
 
+.ind-gastronomy__imagebox{
+    height: 100%;
+}
+
 .ind-gastronomy__images{
     padding: 5%;
     padding-right: 15%;
@@ -2212,13 +2217,15 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 
 .ind-gastronomy__image{
     width: 112%;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
 .ind-gastronomy__percentages{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     border-top: 1px solid rgb(91, 91, 91);
 }
 
@@ -2389,6 +2396,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .ind-employee__name{
     padding-left: 10px;
     color: var(--ind-accent);
+    text-transform: uppercase;
 }
 
 .ind-employee__date{
@@ -2455,7 +2463,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 
 
 
-.ind-employee__separatorTitle{
+.ind-employee__separatorBox{
     margin-top: 25px;
     width: 100%;
     font-family: var(--font-sans);
@@ -2466,10 +2474,11 @@ html[data-theme="night"] .ind-theme-toggle__dot {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .ind-employee__documentationLine{
-    width: 70%;
+    flex: 1;
     border: none;
     color: var(--ind-muted);
     height: 1px;
@@ -2483,6 +2492,9 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 }
 
 .ind-employee__document{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 275px;
     border: 1px solid var(--ind-border);
     border-radius: 10px;
@@ -2503,6 +2515,7 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 }
 
 .ind-employee__pdf{
+    height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2526,8 +2539,9 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 }
 
 .ind-employee__down{
+    height: 50px;
     background-color: var(--ind-bg);
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2600,23 +2614,24 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 .ind-employee__historic{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .ind-employee__table{
     font-size: 15px;
     width: 90%;
+    min-width: 600px;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .ind-employee__row{
-    gap: 10px;
     border-bottom: 1px solid var(--ind-border);
         transition: 0.2s;
 }
 
-.ind-employee__row > td{
+.ind-employee__row > td, .ind-employee__row > th{
     padding: 10px;
+    white-space: nowrap;
 }
 
 .ind-employee__row:hover{

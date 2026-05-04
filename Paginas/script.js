@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let password = document.getElementById("password");
     let enterButton = document.getElementById("loginButton");
     let employeeContent = document.getElementById("ind-employee__content");
+    let employeeName = document.getElementById("ind-employee__name");
 
     buttonLogin.addEventListener("click", abrirCerrar);
 
@@ -63,9 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let userText = user.value;
         let passwordText = password.value;
 
-        if(userText=="user1"&&passwordText=="1234"){
+        if(userText=="user1"||userText==="usuario"&&passwordText=="1234"){
             employeeContent.style.display = "flex";
             abrirCerrar();
+            employeeName.textContent = userText;
         } else {
             alert("Credenciales incorrectas")
         }

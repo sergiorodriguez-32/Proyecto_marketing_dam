@@ -13,6 +13,7 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediasQuerys.css"/>
 </head>
 
 <body class="ind-body">
@@ -278,7 +279,7 @@
                         <form>
                             <label>
                                 <p>Usuario: </p>
-                                <input type="text" placeholder="user1" id="user" required>
+                                <input type="text" placeholder="user1 / usuario" id="user" required>
                             </label>
 
                             <label>
@@ -324,7 +325,7 @@
                             <div class="ind-employee__header">
                                 <div class="ind-employee__nameBox">
                                     <p>Hola,</p>
-                                    <p class="ind-employee__name">Nombre</p>
+                                    <p class="ind-employee__name" id="ind-employee__name">Nombre</p>
                                 </div>
                                 <p class="ind-employee__date">Lun, 2 Mar 2026 · MÍMESIS Studio, S.L.</p>
                             </div>
@@ -346,8 +347,8 @@
                                 </div>
                             </div>
                             <div class="ind-employee__documentation">
-                                <div class="ind-employee__separatorTitle">
-                                    <b>DOCUMENTOS  DISPONIBLES</b>
+                                <div class="ind-employee__separatorBox">
+                                    <b class="ind-employee__separatorTitle">DOCUMENTOS  DISPONIBLES</b>
                                     <hr class="ind-employee__documentationLine">
                                 </div>
                                 <div class="ind-employee__documents">
@@ -398,7 +399,7 @@
                                     </div>
                                 </div>
 
-                                <div class="ind-employee__separatorTitle">
+                                <div class="ind-employee__separatorBox">
                                     <b>SUBIR  DOCUMENTACIÓN</b>
                                     <hr class="ind-employee__documentationLine">
                                 </div>
@@ -411,7 +412,7 @@
                             </div>
 
                             <div class="ind-employee__historic">
-                                <div class="ind-employee__separatorTitle">
+                                <div class="ind-employee__separatorBox">
                                     <b>HISTORIAL DE NÓMINAS</b>
                                     <hr class="ind-employee__documentationLine">
                                 </div>

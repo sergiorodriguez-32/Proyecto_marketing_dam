@@ -227,3 +227,67 @@
 }
 
 /* #endregion */
+
+
+
+
+/* #region Media Query Index gastronomy */
+
+@media (max-width: 1000px){
+    .ind-gastronomy__imagebox{
+        display: none;
+    }
+}
+
+/* #endregion */
+
+
+/* #region Media Query Index employee */
+
+@media (max-width: 1000px){
+    .ind-employee__top{
+        gap: 15px;
+    }
+
+    .ind-employee__column1{
+        display: none;
+    }
+
+    .ind-employee__column2{
+        width: 100%;
+    }
+
+    .ind-employee__information{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ind-employee__card{
+        width: 100%;
+    }
+
+    .ind-employee__documents{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .ind-employee__document{
+        width: 100%;
+    }
+
+    .ind-employee__historic{
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 750px){
+    .ind-employee__header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* #endregion */
