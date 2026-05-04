@@ -1004,9 +1004,9 @@ html {
 
 /*Pagina Capital-Home*/
 
-
-
 /*Pagina Index*/
+
+
 
 /* #region Index*/
 
@@ -1584,6 +1584,10 @@ html[data-theme="night"] .ind-theme-toggle__dot {
 /*Pagina Index*/
 
 /* #endregion */
+
+
+
+/* #region Piratas*/
 :root{
     --pt-color-principal: rgb(10, 10, 10);
     --pt-color-secundario: rgb(242, 242, 242);
@@ -2116,4 +2120,483 @@ html[data-theme="night"] .ind-theme-toggle__dot {
         width: 90%;
         gap: 5px;
     }
+}
+/* #endregion */
+
+
+
+/* #region IndexGastronomy */
+.ind-gastronomy{
+    width: 100%;
+    height: 875px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: var(--pt-color-principal);
+    color: var(--pt-color-secundario);
+}
+
+.ind-gastronomy__box{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.ind-gastronomy__textbox{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    border-right: 0.5px solid rgb(91, 91, 91);
+}
+
+.ind-gastronomy__label{
+    color: var(--pt-color-secundario);
+}
+
+.ind-gastronomy__label::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--pt-color-secundario);
+}
+
+.ind-gastronomy__imagebox{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+}
+
+.ind-gastronomy__title{
+    font-family: var(--ind-font-display);
+    height: 120px;
+    font-size: 70px;
+    line-height: 0.85;
+    
+    margin-bottom: 50px;
+}
+
+.ind-gastronomy__text{
+    width: 70%;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.ind-gastronomy__values{
+    width: 70%;
+    font-size: 14px;
+}
+
+.ind-gastronomy__values>p{
+    gap: 20px;
+    padding: 16px;
+    border-bottom: 1px solid var(--pt-color-terciario);
+}
+
+.ind-gastronomy__dot{
+    user-select: none;
+    border-radius: 100%;
+    background: var(--pt-color-terciario);
+    color: var(--pt-color-terciario);
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+.ind-gastronomy__images{
+    padding: 5%;
+    padding-right: 15%;
+}
+
+.ind-gastronomy__image{
+    width: 112%;
+    padding-bottom: 60px;
+}
+
+.ind-gastronomy__percentages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(91, 91, 91);
+}
+
+.ind-gastronomy__percentageColumn{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 6%;
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+}
+
+.ind-gastronomy__percentageColumn--2{
+    border-left: 1px solid rgb(91, 91, 91);
+}
+
+.ind-gastronomy__percentage{
+    font-size: 50px;
+    color: var(--pt-color-terciario);
+    font-family: var(--ind-font-display);
+}
+
+/* #endregion */
+
+
+
+
+.ind-employee{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.ind-employee__box{
+    width: 80%;
+    height: 100%;
+}
+
+.ind-employee__rowTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.ind-employee__indicator{
+    color: var(--ind-accent);
+}
+
+.ind-employee__title{
+    width: 400px;
+    font-size: 75px;
+    font-family: var(--ind-font-display);
+    line-height: 1;
+}
+
+.ind-employee__button{
+    text-align: center;
+    background-color: var(--ind-accent);
+    padding: 15px;
+    border-radius: 4px;
+    width: 125px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.ind-employee__button:hover{
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+
+.ind-login {
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.ind-login__content {
+  background: white;
+  padding: 20px;
+  margin: 10%;
+  width: 300px;
+  border-radius: 10px;
+}
+
+
+.ind-employee__content{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    height: 200%;
+    margin-top: 50px;
+    border: 1px solid var(--ind-border);
+    border-radius: 10px;
+}
+
+.ind-employee__titleBox{
+    height: 125px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ind-employee__column1{
+    width: 20%;
+    background-color: var(--ind-bg-alt);
+}
+
+
+.ind-employee__labels{
+    padding-top: 20px;
+    border-top: 1px solid var(--ind-border);
+}
+
+.ind-employee__label{
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 13px;
+    color: var(--ind-muted);
+}
+
+.ind-employee__label--active{
+    background-color: var(--ind-bg);
+    border-left: 2px solid var(--ind-accent);
+    color: var(--ind-accent);
+}
+
+.ind-employee__label:hover{
+    background-color: var(--ind-bg);
+}
+
+.ind-employee__column2{
+    width: 80%;
+    padding: 50px;
+}
+
+.ind-employee__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ind-employee__name{
+    display: flex;
+    flex-direction: row;
+}
+
+.ind-employee__information{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.ind-employee__card{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--ind-border);
+    border-radius: 15px;
+    padding: 25px;
+    background-color: var(--ind-bg-alt);
+}
+
+.ind-employee__titleCard{
+    color: var(--ind-muted);
+    font-family: var(--ind-font-mono);
+    font-size: 11px;
+}
+
+.ind-employee__mediumCard{
+    font-size: 30px;
+    font-family: var(--ind-font-display);
+}
+
+.ind-employee__mediumCard--red{
+    font-size: 35px;
+    font-family: var(--ind-font-display);
+    color: var(--ind-accent);
+}
+
+.ind-employee__mediumCard--green{
+    color: green;
+}
+
+.ind-employee__textCard{
+    color: var(--ind-muted);
+    font-size: 12px;
+}
+
+
+
+
+.ind-employee__separatorTitle{
+    margin-top: 25px;
+    width: 100%;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    color: var(--ind-muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ind-employee__documentationLine{
+    width: 70%;
+    border: none;
+    color: var(--ind-muted);
+    height: 1px;
+    background-color: var(--ind-border);
+}
+
+.ind-employee__documents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ind-employee__document{
+    width: 275px;
+    border: 1px solid var(--ind-border);
+    border-radius: 10px;
+    background-color: var(--ind-bg-alt);
+}
+
+.ind-employee__top{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 20px;
+}
+
+.ind-employee__pdf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 11px;
+    background-color: rgba(184, 65, 46, 0.12);
+    color: var(--ind-accent);
+    border: 1px solid var(--ind-accent);
+}
+
+.ind-employee__topBox{
+    font-size: 11px;
+    font-family: var(--ind-font-sans);
+    color: var(--ind-muted);
+}
+
+.ind-employee__topTitle{
+    font-size: 13px;
+    color: var(--ind-ink);
+}
+
+.ind-employee__down{
+    background-color: var(--ind-bg);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--ind-accent);
+}
+
+.ind-employee__down > ul{
+    padding-left: 10px;
+}
+
+.ind-employee__state{
+    color: green;
+}
+
+.ind-employee__yourDocumentation{
+    width: 100%;
+    height: 250px;
+    background-color: var(--ind-bg-alt);
+    border-radius: 10px;
+    border: 1px dashed var(--ind-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--ind-muted);
+    font-size: 15px;
+}
+
+.ind-employee__arrow{
+    font-size: 30px;
+}
+
+.ind-employee__yourTitle{
+    color: var(--ind-ink);
+    font-size: 16px;
+}
+
+.ind-employee__yourAccent{
+    color: var(--ind-accent);
+}
+
+.ind-employee__yourType{
+    font-family: var(--ind-font-mono);
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.ind-employee__historic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ind-employee__table{
+    font-size: 15px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.ind-employee__row{
+    gap: 10px;
+    border-bottom: 1px solid var(--ind-border);
+}
+
+.ind-employee__row > td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ind-employee__row--1{
+    height: 40px;
+    background-color: var(--ind-bg-alt);
+    color: var(--ind-muted);
+    font-family: var(--ind-font-mono);
+    font-size: 11px;
+}
+
+.ind-employee__row--1 > th{
+    text-align: start;
+}
+
+.ind-employee__textRed{
+    color: var(--ind-accent);
+}
+
+.ind-employee__textMuted{
+    color: var(--ind-muted);
+}
+
+.ind-employee__statePaid{
+    background-color: rgba(46, 208, 46, 0.12);
+    color: green;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.ind-employee__statePending{
+    background-color:rgba(107, 107, 107, 0.22);
+    color: var(--ind-muted);
+    border-radius: 5px;
+    padding-left: 5px;
 }

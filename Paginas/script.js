@@ -1,3 +1,82 @@
+/* Index */
+
+
+function indToggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute("data-theme");
+
+    if (currentTheme === "night") {
+        html.setAttribute("data-theme", "day");
+        localStorage.setItem("ind-theme", "day");
+    } else {
+        html.setAttribute("data-theme", "night");
+        localStorage.setItem("ind-theme", "night");
+    }
+}
+
+const savedTheme = localStorage.getItem("ind-theme");
+
+if (savedTheme === "night" || savedTheme === "day") {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+}
+
+/* Index */
+const header = document.querySelector(".pt-header__topBox");
+
+let pt_contador=0;
+
+window.addEventListener("scroll", () => {
+    if(pt_contador<1){
+        header.classList.toggle("header-scrolled");
+        pt_contador++;
+    }
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    let login = document.getElementById("ind-login");
+    let buttonLogin = document.getElementById("ind-employee__button");
+    let abierto = false;
+
+    let user = document.getElementById("user");
+    let password = document.getElementById("password");
+    let enterButton = document.getElementById("loginButton");
+    let employeeContent = document.getElementById("ind-employee__content");
+
+    buttonLogin.addEventListener("click", abrirCerrar);
+
+    function abrirCerrar(){
+        if (abierto==false) {
+            login.style.display = "block";
+            abierto = true;
+        } else {
+            login.style.display = "none";
+            return
+        }
+    }
+
+    enterButton.addEventListener("click", (e)=>{
+        e.preventDefault();
+        
+        let userText = user.value;
+        let passwordText = password.value;
+
+        if(userText=="user1"&&passwordText=="1234"){
+            employeeContent.style.display = "flex";
+            abrirCerrar();
+        } else {
+            alert("Credenciales incorrectas")
+        }
+    })
+
+});
+
+
+
+
+
 /* CapitalHome */
 
 const carousel = document.getElementById("carousel");
@@ -124,36 +203,3 @@ startAutoSlide();
 
 /* CapitalHome */
 
-/* Index */
-
-
-function indToggleTheme() {
-    const html = document.documentElement;
-    const currentTheme = html.getAttribute("data-theme");
-
-    if (currentTheme === "night") {
-        html.setAttribute("data-theme", "day");
-        localStorage.setItem("ind-theme", "day");
-    } else {
-        html.setAttribute("data-theme", "night");
-        localStorage.setItem("ind-theme", "night");
-    }
-}
-
-const savedTheme = localStorage.getItem("ind-theme");
-
-if (savedTheme === "night" || savedTheme === "day") {
-    document.documentElement.setAttribute("data-theme", savedTheme);
-}
-
-/* Index */
-const header = document.querySelector(".pt-header__topBox");
-
-let pt_contador=0;
-
-window.addEventListener("scroll", () => {
-    if(pt_contador<1){
-        header.classList.toggle("header-scrolled");
-        pt_contador++;
-    }
-});
