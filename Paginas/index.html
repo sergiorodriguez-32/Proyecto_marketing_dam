@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="day">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MÍMESIS Studio — Agencia Creativa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediasQuerys.css"/>
+</head>
+
+<body class="ind-body">
+    <header class="ind-header">
+        <nav class="ind-nav" aria-label="Navegación principal">
+
+            <a class="ind-nav__logo-link" href="#inicio" aria-label="Ir al inicio">
+                <img class="ind-nav__logo" src="/Paginas/Imagenes/LogoMímesis_Claro.png" alt="MÍMESIS Studio">
+            </a>
+
+            <ul class="ind-nav__list">
+                <li class="ind-nav__item">
+                    <a class="ind-nav__link" href="#valores">Nosotros</a>
+                </li>
+                <li class="ind-nav__item">
+                    <a class="ind-nav__link" href="#valores">Manifiesto</a>
+                </li>
+                <li class="ind-nav__item">
+                    <a class="ind-nav__link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="ind-nav__actions">
+                <button class="ind-theme-toggle" type="button" onclick="indToggleTheme()">
+                    <span class="ind-theme-toggle__dot"></span>
+                </button>
+
+                <a class="ind-button ind-button--nav" href="#contacto">Trabajemos →</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ind-main">
+        <section class="ind-hero" id="inicio">
+            <div class="ind-container">
+                <div class="ind-hero__grid">
+                    <div class="ind-hero__content">
+                        <p class="ind-label">Agencia creativa — Madrid 2026</p>
+
+                        <h1 class="ind-hero__title">
+                            No tenemos<br />
+                            <em class="ind-hero__accent">estilo.</em><br />
+                            Tenemos<br />
+                            el tuyo.
+                        </h1>
+
+                        <p class="ind-hero__text">
+                            MÍMESIS Studio es una agencia creativa que se adapta completamente a la identidad de cada
+                            cliente.
+                            Publicidad, diseño de marca y marketing digital sin filtros propios.
+                        </p>
+
+                        <div class="ind-hero__buttons">
+                            <a class="ind-button ind-button--primary" href="#valores">Ver manifiesto</a>
+                            <a class="ind-button ind-button--ghost" href="#contacto">Hablamos →</a>
+                        </div>
+                    </div>
+
+                    <div class="ind-hero__visual" aria-label="Logo principal de MÍMESIS Studio">
+                        <img class="ind-hero__logo" src="/Paginas/Imagenes/LogoMímesis_Claro.png" alt="MÍMESIS Studio">
+                    </div>
+                </div>
+
+                <div class="ind-stats" aria-label="Datos destacados">
+                    <article class="ind-stats__item">
+                        <strong class="ind-stats__number">4+</strong>
+                        <span class="ind-stats__label">Campañas activas</span>
+                    </article>
+
+                    <article class="ind-stats__item">
+                        <strong class="ind-stats__number">100%</strong>
+                        <span class="ind-stats__label">Adaptación al cliente</span>
+                    </article>
+
+                    <article class="ind-stats__item">
+                        <strong class="ind-stats__number">∞</strong>
+                        <span class="ind-stats__label">Identidades posibles</span>
+                    </article>
+                </div>
+
+                <div class="ind-marquee" aria-hidden="true">
+                    <div class="ind-marquee__track">
+                        <span class="ind-marquee__item"><strong>Branding</strong> · Estrategia</span>
+                        <span class="ind-marquee__item"><strong>Publicidad</strong> · Campañas</span>
+                        <span class="ind-marquee__item"><strong>Identidad visual</strong> · Naming</span>
+                        <span class="ind-marquee__item"><strong>Marketing digital</strong> · Contenido</span>
+                        <span class="ind-marquee__item"><strong>Dirección de arte</strong> · Fotografía</span>
+
+                        <span class="ind-marquee__item"><strong>Branding</strong> · Estrategia</span>
+                        <span class="ind-marquee__item"><strong>Publicidad</strong> · Campañas</span>
+                        <span class="ind-marquee__item"><strong>Identidad visual</strong> · Naming</span>
+                        <span class="ind-marquee__item"><strong>Marketing digital</strong> · Contenido</span>
+                        <span class="ind-marquee__item"><strong>Dirección de arte</strong> · Fotografía</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ind-values" id="valores">
+            <div class="ind-container">
+                <div class="ind-values__grid">
+                    <aside class="ind-values__aside">
+                        <p class="ind-label">Manifiesto</p>
+
+                        <h2 class="ind-values__title">
+                            Comunicación<br />
+                            sobre<br />
+                            <em class="ind-values__accent">decoración.</em>
+                        </h2>
+
+                        <blockquote class="ind-values__quote">
+                            “Si es solo bonito, lo descartamos.<br />
+                            Cada pieza tiene que tener algo que decir.”
+                        </blockquote>
+
+                        <div class="ind-team">
+                            <p class="ind-team__eyebrow">Equipo fundador</p>
+
+                            <ul class="ind-team__list">
+                                <li class="ind-team__item">
+                                    <strong class="ind-team__name">Renzo</strong>
+                                    <span class="ind-team__role">Desarrollador</span>
+                                </li>
+
+                                <li class="ind-team__item">
+                                    <strong class="ind-team__name">Sergio</strong>
+                                    <span class="ind-team__role">Full Stack</span>
+                                </li>
+
+                                <li class="ind-team__item">
+                                    <strong class="ind-team__name">Carlos</strong>
+                                    <span class="ind-team__role">Full Stack</span>
+                                </li>
+
+                                <li class="ind-team__item">
+                                    <strong class="ind-team__name">Brasas</strong>
+                                    <span class="ind-team__role">Desarrollador</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="ind-values__list">
+                        <article class="ind-value-card">
+                            <span class="ind-value-card__number">01</span>
+
+                            <div class="ind-value-card__content">
+                                <h3 class="ind-value-card__title">Brutalismo creativo</h3>
+                                <p class="ind-value-card__text">
+                                    Priorizamos lo crudo y lo analógico sobre la perfección pulida.
+                                    El grano, el ruido y los errores intencionales son herramientas,
+                                    no fallos.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="ind-value-card">
+                            <span class="ind-value-card__number">02</span>
+
+                            <div class="ind-value-card__content">
+                                <h3 class="ind-value-card__title">Anti-corporativo</h3>
+                                <p class="ind-value-card__text">
+                                    Rechazamos la simetría lineal y el lenguaje de agencia.
+                                    Sin buzzwords, sin propuestas genéricas, sin PowerPoints de relleno.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="ind-value-card">
+                            <span class="ind-value-card__number">03</span>
+
+                            <div class="ind-value-card__content">
+                                <h3 class="ind-value-card__title">Mímesis total</h3>
+                                <p class="ind-value-card__text">
+                                    Nos disfrazamos de la marca del cliente. Nuestro trabajo es invisible:
+                                    cuando lo ves, solo ves a ellos, no a nosotros.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="ind-value-card">
+                            <span class="ind-value-card__number">04</span>
+
+                            <div class="ind-value-card__content">
+                                <h3 class="ind-value-card__title">Transparencia radical</h3>
+                                <p class="ind-value-card__text">
+                                    Llevamos tu empresa a su máximo potencial sin filtros ni agendas ocultas.
+                                    Sabrás exactamente qué hacemos y por qué.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="ind-value-card">
+                            <span class="ind-value-card__number">05</span>
+
+                            <div class="ind-value-card__content">
+                                <h3 class="ind-value-card__title">Impacto medible</h3>
+                                <p class="ind-value-card__text">
+                                    Generamos impacto real. No métricas de vanidad: visibilidad, conversión
+                                    y reconocimiento de marca que se puede medir.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ind-gastronomy">
+            <div class="ind-gastronomy__box">
+                <div class="ind-gastronomy__textbox ind-gastronomy__textbox--1">
+                    <p class="ind-label ind-gastronomy__label">Proyecto 01 · Gastronomía</p>
+                    <div class="ind-gastronomy__title">
+                        <p>Piratas</p>
+                        <p>Restaurante</p>
+                    </div>
+
+                    <div class="ind-gastronomy__text">
+                        <p>Campaña completa de marca para un restaurante con temática pirata en Alcorcón. Identidad, fotografía gastronómica, redes sociales y carta física. Del concepto a la mesa.</p>
+                    </div>
+
+                    <div class="ind-gastronomy__values">
+                            <p><span class="ind-gastronomy__dot">oo</span> Identidad visual & naming</p>
+                            <p><span class="ind-gastronomy__dot">oo</span> Dirección de arte fotográfico</p>
+                            <p><span class="ind-gastronomy__dot">oo</span> Estrategia de redes sociales</p>
+                            <p><span class="ind-gastronomy__dot">oo</span> Diseño de carta & packaging</p>
+                            <p><span class="ind-gastronomy__dot">oo</span> Campaña de apertura</p>
+                    </div>
+                </div>
+                <div class="ind-gastronomy__imagebox">
+                    <div class="ind-gastronomy__images">
+                        <img src="Imagenes/ind-fotoHomePiratas.jpg" class="ind-gastronomy__image">
+                        <img src="Imagenes/ind-fotoTextoPiratas.jpg" class="ind-gastronomy__image">
+                    </div>
+                    <div class="ind-gastronomy__percentages">
+                        <div class="ind-gastronomy__percentageColumn">
+                            <p class="ind-gastronomy__percentage">+340%</p>
+                            <p>ALCANCE ORGÁNICO</p>
+                        </div>
+                        <div class="ind-gastronomy__percentageColumn ind-gastronomy__percentageColumn--2">
+                            <p class="ind-gastronomy__percentage">5.1k</p>
+                            <p>SEGUIDORES EN 30 DÍAS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ind-employee">
+            <div class="ind-employee__box">
+                    <p class="ind-label">Acceso restringido</p>
+                    <div class="ind-employee__rowTitle">
+                        <p class="ind-employee__title">Portal del empleado</p>
+                        <p class="ind-employee__button" id="ind-employee__button">Acceder</p>
+                    </div>
+
+
+                    <div class="ind-login" id="ind-login">
+                        <div class="ind-login__content">
+                        <h3>Login</h3>
+                        <form>
+                            <label>
+                                <p>Usuario: </p>
+                                <input type="text" placeholder="user1 / usuario" id="user" required>
+                            </label>
+
+                            <label>
+                                <p>Contraseña: </p>
+                                <input type="password" placeholder="1234" id="password" required>
+                            </label>
+                            <br>
+                            <button class="enterButton" id="loginButton">Entrar</button>
+                        </form>
+                        </div>
+                    </div>
+
+                    <div class="ind-employee__content" id="ind-employee__content">
+                        <div class="ind-employee__column1">
+                            <div class="ind-employee__titleBox">
+                                <p>MÍMESIS</p>
+                                <p class="ind-employee__subtitle">Portal Interno</p>
+                            </div>
+                            <div class="ind-employee__labels">
+                                <div class="ind-employee__label ind-employee__label--active">
+                                    <img>
+                                    <p>Dashboard</p>
+                                </div>
+                                <div class="ind-employee__label">
+                                    <img>
+                                    <p>Mi contrato</p>
+                                </div>
+                                <div class="ind-employee__label">
+                                    <img>
+                                    <p>Mis nóminas</p>
+                                </div>
+                                <div class="ind-employee__label">
+                                    <img>
+                                    <p>Subir documentos</p>
+                                </div>
+                                <div class="ind-employee__label">
+                                    <img>
+                                    <p>Mi perfil</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ind-employee__column2">
+                            <div class="ind-employee__header">
+                                <div class="ind-employee__nameBox">
+                                    <p>Hola,</p>
+                                    <p class="ind-employee__name" id="ind-employee__name">Nombre</p>
+                                </div>
+                                <p class="ind-employee__date">Lun, 2 Mar 2026 · MÍMESIS Studio, S.L.</p>
+                            </div>
+                            <div class="ind-employee__information">
+                                <div class="ind-employee__card">
+                                    <p class="ind-employee__titleCard">ESTADO CONTRATO</p>
+                                    <p class="ind-employee__mediumCard ind-employee__mediumCard--green">Activo</p>
+                                    <p class="ind-employee__textCard">Formativo práctica profesional · 1 año</p>
+                                </div>
+                                <div class="ind-employee__card">
+                                    <p class="ind-employee__titleCard">PRÓXIMA NÓMINA</p>
+                                    <p class="ind-employee__mediumCard ind-employee__mediumCard--red">31 Mar</p>
+                                    <p class="ind-employee__textCard">Salario bruto; 1.221,00€</p>
+                                </div>
+                                <div class="ind-employee__card">
+                                    <p class="ind-employee__titleCard">VACACIONES DISP.</p>
+                                    <p class="ind-employee__mediumCard ind-employee__mediumCard--red">30</p>
+                                    <p class="ind-employee__textCard">Días naturales - ejercicio 2026</p>
+                                </div>
+                            </div>
+                            <div class="ind-employee__documentation">
+                                <div class="ind-employee__separatorBox">
+                                    <b class="ind-employee__separatorTitle">DOCUMENTOS  DISPONIBLES</b>
+                                    <hr class="ind-employee__documentationLine">
+                                </div>
+                                <div class="ind-employee__documents">
+                                    <div class="ind-employee__document">
+                                        <div class="ind-employee__top">
+                                            <p class="ind-employee__pdf">PDF</p>
+                                            <div class="ind-employee__topBox">
+                                                <p class="ind-employee__topTitle">Contrato de trabajo</p>
+                                                <p>Firmado · 02/03/2026</p>
+                                            </div>
+                                        </div>
+                                        <div class="ind-employee__down">
+                                            <ul>
+                                                <li class="ind-employee__state">Vigente</li>
+                                            </ul>
+                                            <p class="ind-employee__download">DESCARGAR -></p>
+                                        </div>
+                                    </div>
+                                    <div class="ind-employee__document">
+                                        <div class="ind-employee__top">
+                                            <p class="ind-employee__pdf">PDF</p>
+                                            <div class="ind-employee__topBox">
+                                                <p class="ind-employee__topTitle">Nómina — Marzo 2026</p>
+                                                <p>Emitida · 31/03/2026</p>
+                                            </div>
+                                        </div>
+                                        <div class="ind-employee__down">
+                                            <ul>
+                                                <li class="ind-employee__state">Vigente</li>
+                                            </ul>
+                                            <p class="ind-employee__download">DESCARGAR -></p>
+                                        </div>
+                                    </div>
+                                    <div class="ind-employee__document">
+                                        <div class="ind-employee__top">
+                                            <p class="ind-employee__pdf">PDF</p>
+                                            <div class="ind-employee__topBox">
+                                                <p class="ind-employee__topTitle">Carta de despido</p>
+                                                <p>Emitida · 10/02/2027</p>
+                                            </div>
+                                        </div>
+                                        <div class="ind-employee__down">
+                                            <ul>
+                                                <li class="ind-employee__state">Vigente</li>
+                                            </ul>
+                                            <p class="ind-employee__download">DESCARGAR -></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ind-employee__separatorBox">
+                                    <b>SUBIR  DOCUMENTACIÓN</b>
+                                    <hr class="ind-employee__documentationLine">
+                                </div>
+                                <div class="ind-employee__yourDocumentation">
+                                    <p class="ind-employee__arrow">↑</p>
+                                    <p class="ind-employee__yourTitle">Arrastra tu documento aquí</p>
+                                    <p>o <span class="ind-employee__yourAccent">seleciona un archivo</span> desde el equipo</p>
+                                    <p class="ind-employee__yourType">PDF, DOC, JPG · Máx. 10 MB</p>
+                                </div>
+                            </div>
+
+                            <div class="ind-employee__historic">
+                                <div class="ind-employee__separatorBox">
+                                    <b>HISTORIAL DE NÓMINAS</b>
+                                    <hr class="ind-employee__documentationLine">
+                                </div>
+                                <table class="ind-employee__table">
+                                    <tr class="ind-employee__row ind-employee__row--1">
+                                        <th>PERÍODO</th>
+                                        <th>SALARIO BRUTO</th>
+                                        <th>SALARIO BRUTO</th>
+                                        <th>DEDUCCIONES SS</th>
+                                        <th>RET.IRPF</th>
+                                        <th>ESTADO</th>
+                                    </tr>
+                                    <tr class="ind-employee__row">
+                                        <td>Marzo 2026</td>
+                                        <td>1.271,00€</td>
+                                        <td class="ind-employee__textRed">- 92,59€</td>
+                                        <td class="ind-employee__textMuted">0,00€</td>
+                                        <td>1.178,41€</td>
+                                        <td>
+                                            <p class="ind-employee__statePaid">✓ Pagada</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="ind-employee__row">
+                                        <td>Abril 2026</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>
+                                            <p class="ind-employee__statePending">Pendiente</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <span class="ind-contact-anchor" id="contacto" aria-hidden="true"></span>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
