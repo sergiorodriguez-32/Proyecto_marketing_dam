@@ -1,293 +1,1278 @@
-@media (max-width: 1024px) {
+/* #region Media capital home */
 
-    .cph-empresa {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .cph-empresa__box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        max-width: 70%;
-    }
-
-    .cph-property-card {
-        flex: 0 0 46%;
-        min-width: 46%;
-        max-width: 46%;
-        height: auto;
-        min-height: 500px;
-    }
-
-    .cph-buy__bot {
-        display: flex;
-        gap: 20px;
-        align-items: stretch;
-    }
-
-
-    .cph-buy__card {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: var(--cph-color-primary-dark);
-        padding: 20px;
-        border-radius: 10px;
-        max-height: 320px;
-
-    }
-
-}
-
-
-
-/* #region Media Query Movil (600px) capital home */
-@media screen and (max-width: 600px) {
-
-    .cph-body {
-        padding-top: 130px;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
+@media (max-width: 1200px) {
 
     .cph-header {
-        position: absolute;
-        flex-direction: column;
-        gap: 12px;
-        padding: 15px 20px;
-        background-color: var(--cph-color-primary-light);
+        gap: 32px;
+        padding: 10px 24px;
+        justify-content: space-between;
     }
 
-    .cph-header__center {
-        display: none;
+    .center__list {
+        gap: 36px;
     }
 
-    .cph-header__left {
-        gap: 10px;
-    }
-
-
-    .cph-hero {
-        min-height: 450px;
-        padding: 0 25px;
-        box-sizing: border-box;
+    .list__link {
+        font-size: 18px;
     }
 
     .cph-hero__title {
-        font-size: 38px;
-        line-height: 1.2;
+        font-size: 68px;
     }
 
     .cph-hero__text {
-        font-size: 22px;
-        margin: 15px 0 25px;
+        font-size: 42px;
     }
-
-
-    .cph-empresa,
-    .cph-services,
-    .cph-buy {
-        padding: 40px 25px;
-        box-sizing: border-box;
-    }
-
 
     .cph-empresa {
-        padding: 40px 25px;
+        padding: 50px 32px;
     }
 
     .cph-empresa__box {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    .cph-empresa__card {
-        flex: none;
-        width: 100%;
-        min-height: auto;
-        padding: 30px 20px 40px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .cph-empresa__text {
-        margin-bottom: 0;
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-
 
     .cph-carousel {
-        padding: 40px 0;
-
-    }
-
-    .cph-carousel__title {
-        padding: 0 25px;
-
-    }
-
-    .cph-carousel__wrapper {
-        padding: 20px 25px;
-
+        padding: 50px 32px;
     }
 
     .cph-property-card {
-        flex: 0 0 80%;
-        min-width: 80%;
+        flex: 0 0 38%;
+        min-width: 38%;
+        max-width: 38%;
     }
 
+    .cph-services__box {
+        gap: 24px;
+    }
+
+    .cph-buy__bot {
+        gap: 20px;
+    }
+
+    .cph-footer__container {
+        grid-template-columns: 1fr 1.6fr 1fr;
+        gap: 36px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .cph-body {
+        padding-top: 0;
+    }
+
+    .cph-header {
+        position: sticky;
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 14px 24px;
+    }
+
+    .cph-header__left {
+        justify-content: flex-start;
+    }
+
+    .cph-left__img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .cph-left__title {
+        font-size: 18px;
+    }
+
+    .cph-header__center {
+        order: 3;
+        width: 100%;
+    }
+
+    .center__list {
+        width: 100%;
+        justify-content: center;
+        gap: 28px;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .cph-header__right {
+        padding: 0;
+    }
+
+    .box__button {
+        padding: 12px 18px;
+    }
+
+    .button__link {
+        font-size: 15px;
+    }
+
+    .cph-hero {
+        min-height: 620px;
+        padding: 80px 24px;
+    }
+
+    .cph-hero__title {
+        font-size: 58px;
+    }
+
+    .cph-hero__text {
+        font-size: 34px;
+    }
+
+    .button__link--size {
+        font-size: 22px;
+    }
+
+    .cph-carousel__wrapper {
+        padding: 20px 56px 30px;
+    }
+
+    .cph-property-card {
+        flex: 0 0 48%;
+        min-width: 48%;
+        max-width: 48%;
+        height: 610px;
+    }
 
     .cph-services__title {
-        font-size: 30px;
-        padding-left: 0;
-        text-align: center;
+        padding-left: 32px;
     }
 
     .cph-services__box {
         grid-template-columns: 1fr;
-        grid-template-areas: "a" "b" "c";
-        gap: 30px;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+        gap: 48px;
     }
 
+    .cph-item__top {
+        padding: 70px;
+    }
+
+    .cph-item__bot {
+        width: 70%;
+    }
 
     .cph-contact {
-        padding: 60px 25px;
-        margin-top: 60px;
+        padding: 70px 40px;
     }
 
     .cph-contact__container {
         flex-direction: column;
-        gap: 40px;
+        align-items: flex-start;
+        gap: 36px;
     }
 
-    .cph-contact__title {
-        font-size: 2.2rem;
-        text-align: center;
+    .cph-contact__content {
+        max-width: 760px;
     }
 
     .cph-contact__form-box {
-        width: 100%;
         max-width: 100%;
-        padding: 25px;
-        box-sizing: border-box;
     }
 
     .cph-buy__bot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        padding: 20px;
-        gap: 30px;
+        width: 100%;
+        padding: 24px 40px;
     }
 
-
-    .cph-footer {
-        padding: 50px 25px;
+    .cph-buy__card {
+        width: 100%;
     }
 
     .cph-footer__container {
         grid-template-columns: 1fr;
-        gap: 45px;
         text-align: center;
     }
 
     .cph-footer__offices {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .cph-footer__list a {
-        padding-left: 0;
-
-    }
-
-    .cph-footer__list a::before {
-        display: none;
-
+        grid-template-columns: 1fr 1fr;
     }
 
     .cph-footer__bottom-links {
         justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .cph-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cph-header__left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cph-header__right {
+        width: 100%;
+    }
+
+    .right__box {
+        width: 100%;
+    }
+
+    .box__button {
+        width: 100%;
+    }
+
+    .center__list {
+        gap: 18px;
+    }
+
+    .list__link {
+        font-size: 16px;
+    }
+
+    .cph-hero {
+        min-height: 560px;
+        padding: 70px 20px;
+    }
+
+    .cph-hero__title {
+        font-size: clamp(42px, 9vw, 56px);
+    }
+
+    .cph-hero__text {
+        font-size: clamp(26px, 6vw, 34px);
+    }
+
+    .cph-empresa {
+        padding: 40px 20px;
+    }
+
+    .cph-empresa__box {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .cph-empresa__card {
+        min-height: auto;
+    }
+
+    .cph-carousel {
+        padding: 44px 20px;
+    }
+
+    .cph-carousel__title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .cph-carousel__wrapper {
+        padding: 20px 48px 30px;
+    }
+
+    .cph-property-card {
+        flex: 0 0 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 590px;
+    }
+
+    .cph-carousel__arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    .cph-services__title {
+        padding-left: 0;
+        text-align: center;
+        font-size: 34px;
+        margin-bottom: 50px;
+    }
+
+    .cph-item__top {
+        padding: 58px;
+    }
+
+    .cph-item__bot {
+        width: 86%;
+    }
+
+    .cph-contact {
+        margin-top: 80px;
+        padding: 64px 24px;
+    }
+
+    .cph-contact__title {
+        font-size: 2.4rem;
+    }
+
+    .cph-contact__text {
+        font-size: 1rem;
+    }
+
+    .cph-contact__form-box {
+        padding: 24px;
+    }
+
+    .cph-buy__title {
+        font-size: 30px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .cph-buy__text {
+        font-size: 21px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .cph-buy__bot {
+        padding: 20px;
+    }
+
+    .cph-footer {
+        padding: 60px 24px 32px;
+    }
+
+    .cph-footer__offices {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .cph-footer__heading-line {
+        width: 220px;
+    }
+
+    .cph-footer__legal {
+        margin-top: 48px;
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .cph-footer__legal span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 560px) {
+
+    .cph-header {
+        padding: 12px 16px;
+    }
+
+    .cph-left__img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .cph-left__title {
+        font-size: 17px;
+    }
+
+    .center__list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .list__link {
+        font-size: 15px;
+    }
+
+    .button__link {
+        font-size: 14px;
+    }
+
+    .cph-hero {
+        min-height: 520px;
+        padding: 60px 16px;
+    }
+
+    .cph-hero__title {
+        font-size: 40px;
+        line-height: 1.08;
+    }
+
+    .cph-hero__text {
+        font-size: 25px;
+        margin-top: 18px;
+    }
+
+    .button__link--size {
+        font-size: 18px;
+    }
+
+    .cph-empresa {
+        margin-top: 30px;
+        padding: 32px 16px;
+    }
+
+    .cph-empresa__card {
+        padding: 22px 18px;
+    }
+
+    .cph-empresa__title {
+        font-size: 22px;
+    }
+
+    .cph-empresa__text {
+        font-size: 15px;
+    }
+
+    .cph-carousel {
+        margin-top: 32px;
+        padding: 36px 14px;
+    }
+
+    .cph-carousel__title {
+        font-size: 26px;
+    }
+
+    .cph-carousel__wrapper {
+        padding: 16px 38px 24px;
+    }
+
+    .cph-property-card__image-wrapper {
+        height: 190px;
+    }
+
+    .cph-property-card__content {
+        padding: 16px;
+    }
+
+    .cph-property-card__title {
+        font-size: 0.9rem;
+    }
+
+    .cph-property-card__price {
+        font-size: 1.45rem;
+    }
+
+    .cph-property-card__features {
+        gap: 10px 14px;
+    }
+
+    .cph-property-card__address,
+    .cph-property-card__type,
+    .cph-property-card__zone {
+        font-size: 0.9rem;
+    }
+
+    .cph-carousel__arrow {
+        width: 34px;
+        height: 34px;
+        font-size: 1.1rem;
+    }
+
+    .cph-services {
+        margin-top: 36px;
+    }
+
+    .cph-services__title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .cph-item__top {
+        padding: 46px;
+    }
+
+    .cph-item__title {
+        font-size: 18px;
+    }
+
+    .cph-item__bot {
+        width: 92%;
+    }
+
+    .cph-item__text {
+        font-size: 15px;
+    }
+
+    .cph-contact {
+        margin-top: 64px;
+        padding: 54px 18px;
+    }
+
+    .cph-contact__eyebrow {
+        font-size: 0.78rem;
+    }
+
+    .cph-contact__title {
+        font-size: 2rem;
+    }
+
+    .cph-contact__form-box {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .cph-contact__input,
+    .cph-contact__button {
+        height: 52px;
+    }
+
+    .cph-buy {
+        margin-top: 42px;
+    }
+
+    .cph-buy__title {
+        font-size: 25px;
+    }
+
+    .cph-buy__text {
+        font-size: 18px;
+    }
+
+    .cph-buy__bot {
+        padding: 16px;
+    }
+
+    .cph-buy__card {
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+    .cph-card__title {
+        font-size: 21px;
+    }
+
+    .cph-card__text {
+        font-size: 15px;
+    }
+
+    .cph-card__span {
+        font-size: 42px;
+    }
+
+    .cph-footer {
+        margin-top: 70px;
+        padding: 50px 18px 28px;
+    }
+
+    .cph-footer__brand-title,
+    .cph-footer__mortgage-title,
+    .cph-footer__heading {
+        font-size: 1.55rem;
+    }
+
+    .cph-footer__link {
+        font-size: 1.2rem;
+    }
+
+    .cph-footer__list a {
+        font-size: 1rem;
+    }
+
+    .cph-footer__mortgage-link {
+        font-size: 1rem;
+    }
+
+    .cph-footer__legal a,
+    .cph-footer__legal span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .cph-header__left {
+        gap: 12px;
+    }
+
+    .cph-left__img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cph-left__title {
+        font-size: 15px;
+    }
+
+    .cph-hero__title {
+        font-size: 35px;
+    }
+
+    .cph-hero__text {
+        font-size: 22px;
+    }
+
+    .box__button {
+        padding: 11px 14px;
+    }
+
+    .cph-carousel__wrapper {
+        padding: 16px 34px 22px;
+    }
+
+    .cph-property-card__image-wrapper {
+        height: 170px;
+    }
+
+    .cph-property-card__brand-badge {
+        font-size: 0.62rem;
+        padding: 8px 6px;
+    }
+
+    .cph-property-card__favorite-btn {
+        width: 36px;
+        height: 36px;
+    }
+
+    .cph-item__top {
+        padding: 38px;
+    }
+
+    .cph-contact__title {
+        font-size: 1.8rem;
+    }
+
+    .cph-buy__title {
+        font-size: 23px;
+    }
+
+    .cph-card__span {
+        font-size: 36px;
+    }
+
+    .cph-footer__heading-line {
+        width: 180px;
+    }
+}
+
+
+/* #endregion */
+
+/* #region Media index */
+
+@media (max-width: 1200px) {
+
+    .ind-container {
+        width: min(100% - 64px, 1100px);
+    }
+
+    .ind-hero__grid {
+        gap: 48px;
+    }
+
+    .ind-values__grid {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 48px;
+    }
+
+    .ind-gastronomy__box {
+        width: 100%;
+    }
+
+    .ind-gastronomy__textbox {
+        padding-left: 32px;
+    }
+
+    .ind-gastronomy__images {
+        padding-right: 8%;
+    }
+
+    .ind-employee__box {
+        width: 90%;
+    }
+
+    .ind-employee__rowTitle {
+        width: 100%;
+    }
+
+    .ind-employee__information {
         gap: 20px;
     }
+
+    .ind-employee__card {
+        width: 100%;
+    }
+
+    .ind-employee__documents {
+        gap: 16px;
+    }
+
+    .ind-employee__document {
+        width: 100%;
+    }
 }
 
-/* #endregion */
+@media (max-width: 1024px) {
+
+    .ind-nav {
+        padding: 0 32px;
+    }
+
+    .ind-nav__list {
+        gap: 24px;
+    }
+
+    .ind-nav__link {
+        font-size: 11px;
+    }
+
+    .ind-button--nav {
+        padding: 8px 18px;
+    }
+
+    .ind-hero {
+        padding: calc(var(--ind-nav-height) + 60px) 0 90px;
+    }
+
+    .ind-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .ind-hero__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ind-hero__text {
+        max-width: 620px;
+    }
+
+    .ind-hero__buttons {
+        justify-content: center;
+    }
+
+    .ind-hero__visual {
+        height: 360px;
+    }
+
+    .ind-stats {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 48px;
+    }
+
+    .ind-values {
+        padding: 90px 0;
+    }
+
+    .ind-values__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ind-values__aside {
+        position: static;
+    }
+
+    .ind-team {
+        max-width: 520px;
+    }
+
+    .ind-gastronomy {
+        height: auto;
+    }
+
+    .ind-gastronomy__box {
+        flex-direction: column;
+    }
+
+    .ind-gastronomy__textbox {
+        width: 100%;
+        padding: 80px 48px;
+        border-right: none;
+        border-bottom: 1px solid rgb(91, 91, 91);
+    }
+
+    .ind-gastronomy__text,
+    .ind-gastronomy__values {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .ind-gastronomy__imagebox {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .ind-gastronomy__images {
+        padding: 40px 48px;
+    }
+
+    .ind-gastronomy__image {
+        width: 100%;
+    }
+
+    .ind-employee__content {
+        flex-direction: column;
+    }
+
+    .ind-employee__column1,
+    .ind-employee__column2 {
+        width: 100%;
+    }
+
+    .ind-employee__column1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ind-employee__titleBox {
+        height: auto;
+    }
+
+    .ind-employee__labels {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: none;
+        padding: 20px;
+        gap: 8px;
+    }
+
+    .ind-employee__label {
+        height: auto;
+        padding: 10px 14px;
+        border: 1px solid var(--ind-border);
+        border-radius: 999px;
+    }
+
+    .ind-employee__label--active {
+        border-left: 1px solid var(--ind-accent);
+    }
+
+    .ind-employee__information {
+        flex-direction: column;
+    }
+
+    .ind-employee__documents {
+        flex-direction: column;
+    }
+
+    .ind-employee__table {
+        min-width: 760px;
+    }
+
+    .ind-employee__historic {
+        overflow-x: auto;
+    }
+}
 
 
+@media (max-width: 768px) {
 
+    .ind-container {
+        width: min(100% - 40px, 720px);
+    }
 
-/* #region Media Query Index gastronomy */
+    .ind-nav {
+        height: auto;
+        min-height: var(--ind-nav-height);
+        padding: 16px 24px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
 
-@media (max-width: 1000px){
-    .ind-gastronomy__imagebox{
+    .ind-nav__logo {
+        height: 40px;
+        max-height: 40px;
+    }
+
+    .ind-nav__list {
+        position: static;
+        order: 3;
+        width: 100%;
+        transform: none;
+        justify-content: center;
+        gap: 28px;
+        padding-top: 12px;
+        border-top: 1px solid var(--ind-border);
+    }
+
+    .ind-nav__actions {
+        margin-left: 0;
+        gap: 16px;
+    }
+
+    .ind-button--nav {
         display: none;
     }
-}
 
-/* #endregion */
-
-
-/* #region Media Query Index employee */
-
-@media (max-width: 1000px){
-    .ind-employee__top{
-        gap: 15px;
+    .ind-hero {
+        padding-top: 150px;
     }
 
-    .ind-employee__column1{
-        display: none;
+    .ind-hero__title {
+        font-size: clamp(52px, 14vw, 78px);
     }
 
-    .ind-employee__column2{
+    .ind-hero__text {
+        font-size: 16px;
+        margin: 32px 0;
+    }
+
+    .ind-hero__buttons {
+        flex-direction: column;
         width: 100%;
+        gap: 14px;
     }
 
-    .ind-employee__information{
+    .ind-hero__buttons .ind-button {
         width: 100%;
-        display: flex;
+        text-align: center;
+    }
+
+    .ind-hero__visual {
+        height: 280px;
+    }
+
+    .ind-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .ind-stats__item {
+        text-align: center;
+    }
+
+    .ind-marquee {
+        margin-top: 56px;
+    }
+
+    .ind-values {
+        padding: 70px 0;
+    }
+
+    .ind-values__title {
+        font-size: clamp(46px, 13vw, 64px);
+    }
+
+    .ind-team {
+        padding: 24px;
+    }
+
+    .ind-value-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 26px;
+    }
+
+    .ind-value-card__number {
+        padding-top: 0;
+    }
+
+    .ind-value-card__title {
+        font-size: 26px;
+    }
+
+    .ind-gastronomy__textbox {
+        padding: 70px 32px;
+    }
+
+    .ind-gastronomy__title {
+        height: auto;
+        font-size: clamp(46px, 12vw, 64px);
+    }
+
+    .ind-gastronomy__images {
+        padding: 32px;
+    }
+
+    .ind-gastronomy__percentages {
         flex-direction: column;
     }
 
-    .ind-employee__card{
+    .ind-gastronomy__percentageColumn--2 {
+        border-left: none;
+        border-top: 1px solid rgb(91, 91, 91);
+    }
+
+    .ind-employee {
+        margin-top: 80px;
+    }
+
+    .ind-employee__box {
+        width: calc(100% - 40px);
+    }
+
+    .ind-employee__rowTitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .ind-employee__title {
+        width: 100%;
+        font-size: clamp(46px, 13vw, 68px);
+    }
+
+    .ind-employee__button {
         width: 100%;
     }
 
-    .ind-employee__documents{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+    .ind-login__content {
+        width: calc(100% - 40px);
+        margin: 120px auto 0;
     }
 
-    .ind-employee__document{
+    .ind-employee__column1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ind-employee__labels {
         width: 100%;
     }
 
-    .ind-employee__historic{
-        overflow-x: scroll;
+    .ind-employee__column2 {
+        padding: 32px 24px;
+    }
+
+    .ind-employee__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .ind-employee__nameBox {
+        font-size: 34px;
+        flex-wrap: wrap;
+    }
+
+    .ind-employee__documents {
+        gap: 18px;
+    }
+
+    .ind-employee__yourDocumentation {
+        height: 220px;
+        padding: 24px;
+        text-align: center;
     }
 }
 
-@media (max-width: 750px){
-    .ind-employee__header{
-        display: flex;
+@media (max-width: 560px) {
+
+    .ind-container {
+        width: min(100% - 28px, 520px);
+    }
+
+    .ind-nav {
+        padding: 14px 16px;
+    }
+
+    .ind-nav__logo {
+        height: 34px;
+        max-height: 34px;
+    }
+
+    .ind-nav__list {
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .ind-nav__link {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+    }
+
+    .ind-theme-toggle {
+        width: 44px;
+        height: 22px;
+    }
+
+    .ind-theme-toggle__dot {
+        width: 16px;
+        height: 16px;
+    }
+
+    html[data-theme="night"] .ind-theme-toggle__dot {
+        transform: translateX(22px);
+    }
+
+    .ind-hero {
+        padding-top: 140px;
+        padding-bottom: 70px;
+    }
+
+    .ind-label {
+        font-size: 10px;
+        letter-spacing: 0.14em;
+    }
+
+    .ind-label::before {
+        width: 24px;
+    }
+
+    .ind-hero__title {
+        font-size: clamp(46px, 16vw, 64px);
+    }
+
+    .ind-hero__visual {
+        height: 220px;
+    }
+
+    .ind-stats__number {
+        font-size: 44px;
+    }
+
+    .ind-marquee__item {
+        font-size: 18px;
+    }
+
+    .ind-values__quote {
+        margin-top: 28px;
+        padding-left: 18px;
+        font-size: 14px;
+    }
+
+    .ind-team {
+        padding: 20px;
+    }
+
+    .ind-team__item {
+        gap: 12px;
+    }
+
+    .ind-team__button {
+        padding: 6px 12px;
+        font-size: 9px;
+    }
+
+    .ind-value-card {
+        padding: 22px;
+    }
+
+    .ind-value-card__title {
+        font-size: 24px;
+    }
+
+    .ind-value-card__text {
+        font-size: 14px;
+    }
+
+    .ind-gastronomy__textbox {
+        padding: 60px 22px;
+    }
+
+    .ind-gastronomy__title {
+        font-size: clamp(40px, 14vw, 56px);
+        margin-bottom: 32px;
+    }
+
+    .ind-gastronomy__text {
+        font-size: 15px;
+    }
+
+    .ind-gastronomy__values {
+        font-size: 13px;
+    }
+
+    .ind-gastronomy__values>p {
+        padding: 14px 0;
+    }
+
+    .ind-gastronomy__images {
+        padding: 22px;
+    }
+
+    .ind-gastronomy__percentage {
+        font-size: 42px;
+    }
+
+    .ind-employee__column2 {
+        padding: 28px 18px;
+    }
+
+    .ind-employee__nameBox {
+        font-size: 30px;
+    }
+
+    .ind-employee__date {
+        font-size: 12px;
+    }
+
+    .ind-employee__card {
+        height: auto;
+        min-height: 140px;
+    }
+
+    .ind-employee__mediumCard,
+    .ind-employee__mediumCard--red {
+        font-size: 30px;
+    }
+
+    .ind-employee__top {
+        padding: 16px;
+    }
+
+    .ind-employee__down {
+        height: auto;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .ind-employee__table {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .ind-nav__list {
+        gap: 10px;
+    }
+
+    .ind-nav__link {
+        font-size: 9px;
+    }
+
+    .ind-hero__title {
+        font-size: 44px;
+    }
+
+    .ind-button--primary,
+    .ind-button--ghost {
+        padding: 14px 24px;
+        font-size: 12px;
+    }
+
+    .ind-values__title {
+        font-size: 42px;
+    }
+
+    .ind-team__item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ind-team__button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ind-gastronomy__title {
+        font-size: 38px;
+    }
+
+    .ind-gastronomy__percentage {
+        font-size: 36px;
+    }
+
+    .ind-employee__title {
+        font-size: 42px;
+    }
+
+    .ind-employee__nameBox {
+        font-size: 26px;
+    }
+
+    .ind-employee__labels {
         flex-direction: column;
     }
-}
 
+    .ind-employee__label {
+        width: 100%;
+    }
+}
 
 /* #endregion */
