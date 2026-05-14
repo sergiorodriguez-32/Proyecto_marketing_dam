@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron BRS | Destilería Premium</title>
+    <link rel="stylesheet" href="ronstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <input type="checkbox" id="cart-toggle" class="cart-checkbox">
+
+    <nav class="navbar">
+        <div class="logo">RON BRS</div>
+        <ul class="nav-links">
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><label for="cart-toggle" class="btn-nav-trigger">Comprar</label></li>
+        </ul>
+    </nav>
+
+    <div class="side-panel">
+        <label for="cart-toggle" class="close-btn">&times;</label>
+        <div class="panel-content">
+            <h2>Tu Selección</h2>
+            <div class="cart-item">
+                <p><strong>Reserva Especial 18 Años</strong></p>
+                <p class="gold-text">120,00€</p>
+            </div>
+            <hr>
+            <button class="btn-primary">Finalizar Pedido</button>
+            <p class="disclaimer">Envío exclusivo en 24h.</p>
+        </div>
+    </div>
+    
+    <label for="cart-toggle" class="overlay"></label>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="subtitle">Desde 1888</span>
+            <h1>La Paciencia hecha <br> <span class="gold-text">Oro Líquido</span></h1>
+            <p>Un viaje sensorial a través de barricas de roble y el alma del Caribe, con este ron muy PREMIUM.</p>
+            <div class="hero-btns">
+                <a href="#coleccion" class="btn-primary">Descubrir Selección</a>
+                <label for="cart-toggle" class="btn-secondary">Pedido Rápido</label>
+            </div>
+        </div>
+    </header>
+
+    <section id="coleccion" class="featured-product">
+        <div class="product-grid">
+            <div class="product-info">
+                <h2>Reserva Familiar</h2>
+                <p>Envejecido por 18 años, nuestro reserva ofrece notas de 
+                    <span class="tooltip">Vainilla Bourbon
+                        <span class="tooltiptext">Extraída de la degradación natural de la lignina en el roble.</span>
+                    </span>, 
+                    cacao puro y 
+                    <span class="tooltip">Frutos Secos
+                        <span class="tooltiptext">Nueces y almendras tostadas por el sol del Caribe.</span>
+                    </span>.
+                </p>
+                <ul class="specs">
+                    <li><strong>Grado:</strong> 40% Vol.</li>
+                    <li><strong>Cuerpo:</strong> Robusto y Sedoso</li>
+                </ul>
+            </div>
+            <div class="product-image">
+                <img src="/Proyecto_marketing_dam/Paginas/Imagenes/Ron.png" alt="Botella Ron BRS Premium" class="bottle-img">
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="logo-footer">RON BRS</h2>
+                <p>El arte de saber esperar. Destilado con honor, envejecido con orgullo.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="#">Nuestra Cava</a></li>
+                    <li><a href="#">Proceso Artesanal</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                    <li><a href="#">Puntos de Venta</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h3>El Club</h3>
+                <p>Recibe invitaciones a catas privadas.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email">
+                    <button type="submit">→</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ron BRS S.A. | Disfruta con responsabilidad.</p>
+            <div class="legal-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
