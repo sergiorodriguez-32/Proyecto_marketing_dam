@@ -1275,4 +1275,42 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .ind-footer {
+        padding: 56px 0 28px;
+    }
+
+    .ind-footer__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .ind-footer__brand {
+        max-width: 100%;
+    }
+
+    .ind-footer__bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ind-footer__logo {
+        width: 130px;
+    }
+
+    .ind-footer__text,
+    .ind-footer__link,
+    .ind-footer__small {
+        font-size: 13px;
+    }
+
+    .ind-footer__bottom {
+        font-size: 10px;
+    }
+}
+
 /* #endregion */
